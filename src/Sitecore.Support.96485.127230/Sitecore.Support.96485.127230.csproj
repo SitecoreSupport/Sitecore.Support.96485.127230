@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sitecore.Support</RootNamespace>
-    <AssemblyName>Sitecore.Support.96485</AssemblyName>
+    <AssemblyName>Sitecore.Support.96485.127230</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -44,6 +44,18 @@
       <HintPath>..\packages\SC.Sitecore.Buckets.8.2.1\lib\Sitecore.Buckets.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.Client.8.2.1\lib\Sitecore.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.ContentSearch.8.2.1\lib\Sitecore.ContentSearch.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.ContentSearch.Linq.8.2.1\lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.2.1\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -62,11 +74,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buckets\FieldTypes\BucketInternalLink.cs" />
+    <Compile Include="Buckets\Forms\SelectRenderingDatasourceForm.cs" />
+    <Compile Include="Shell\Applications\Dialogs\SelectRenderingDatasource\SelectRenderingDatasourceForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shell\Applications\ContentEditor\RenderingDatasource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="sitecore\shell\Override\SelectRenderingDatasource.xml" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup />

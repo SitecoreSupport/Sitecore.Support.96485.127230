@@ -148,7 +148,7 @@
                 };
                 args3.FallbackDatasourceRoots = list;
                 args3.ContentLanguage = contentItem?.Language;
-                args3.ContextItemPath = (contentItem != null) ? contentItem.Paths.FullPath : string.Empty;
+                args3.ContextItemPath = (contentItem != null) ? contentItem.Paths.LongID : string.Empty;
                 args3.ShowDialogIfDatasourceSetOnRenderingItem = true;
                 args3.CurrentDatasource = this.ValueItemId;
                 GetRenderingDatasourceArgs args2 = args3;
